@@ -6,6 +6,8 @@ This repo is made for Non-Coders, but Coders can also contribute to make this re
 
 Welcome to the Coding Recipe Book project, made for GDSC x Hacktoberfest 2023. This project is a simple web application that allows you to discover and explore coding recipes for various programming tasks.
 
+You can add your own recipes by modifying recipes.json file.
+
 <h2 align=center> Features ✨ </h2>
 
 - 🔍 Search and explore coding recipes easily
