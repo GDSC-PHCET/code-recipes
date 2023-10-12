@@ -1,6 +1,6 @@
 <h2 align=center> Coding Recipe Book 📚 </h2>
 
-This repository is designed to be inclusive for both non-coders and experienced programmers, welcoming contributions from all skill levels to enhance and enrich the content.
+This repo is made for Non-Coders, but Coders can also contribute to make this repo better.
 
 ![GDSC PHCET](https://github.com/GDSC-PHCET/todo-list/assets/46837876/977b90ea-1d26-4c51-91db-f71c604f38ad)
 
