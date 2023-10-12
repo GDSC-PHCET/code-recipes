@@ -1,0 +1,18 @@
+/* Style the footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Center the text and icon in the footer */
+.footer p, .footer a {
+    display: inline;
+    margin: 0 auto;
+}
+
+/* Style the GitHub icon */
+.fab.fa-github {
+    font-size: 24px;
+    margin-right: 5px;
+}
