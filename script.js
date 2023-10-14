@@ -12,6 +12,28 @@ window.onload = function () {
     document.getElementById("recipe-form").addEventListener("submit", submitRecipe);
 };
 
+// Function to get display tags
+function displayTags(tags) {
+  let htmlTags = ``;
+  for (tag of tags) {
+    htmlTags += `<span class="tag" onClick="searchTag()">${tag}</span>`
+  }
+  return `<div>${htmlTags}</div>`
+
+}
+// Function to display card 
+function displayCard({title, description, code_link, tags}) {
+  return `
+  <div class="card">
+      <div class="card-body">
+          <h5 class="card-title">${title}</h5>
+          <p class="card-text">${description}</p>
+          ${displayTags(tags)}
+          <a href="${code_link}" class="btn btn-primary" target="_blank">View Code</a>
+      </div>
+  </div>
+`
+}
 // Function to fetch recipes from the JSON file
 function fetchRecipes() {
     fetch("recipes.json")
@@ -30,15 +52,7 @@ function displayRecipes() {
     recipes.forEach(recipe => {
         const card = document.createElement("div");
         card.className = "col-md-4 mb-4";
-        card.innerHTML = `
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">${recipe.title}</h5>
-                    <p class="card-text">${recipe.description}</p>
-                    <a href="${recipe.code_link}" class="btn btn-primary" target="_blank">View Code</a>
-                </div>
-            </div>
-        `;
+        card.innerHTML = displayCard(recipe);
         recipeList.appendChild(card);
     });
 }
@@ -83,6 +97,15 @@ function searchRecipes() {
     displayFilteredRecipes(filteredRecipes);
 }
 
+//Function to search tag
+function searchTag() {
+ const filteredRecipes = recipes.filter(recipe => {
+      return recipe.tags.includes(event.srcElement.innerText) 
+  });
+
+  displayFilteredRecipes(filteredRecipes);
+}
+
 // Function to display filtered recipes
 function displayFilteredRecipes(filteredRecipes) {
     const recipeList = document.getElementById("recipe-list");
@@ -91,15 +114,7 @@ function displayFilteredRecipes(filteredRecipes) {
     filteredRecipes.forEach(recipe => {
         const card = document.createElement("div");
         card.className = "col-md-4 mb-4";
-        card.innerHTML = `
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">${recipe.title}</h5>
-                    <p class="card-text">${recipe.description}</p>
-                    <a href="${recipe.code_link}" class="btn btn-primary" target="_blank">View Code</a>
-                </div>
-            </div>
-        `;
+        card.innerHTML = displayCard(recipe);
         recipeList.appendChild(card);
     });
 }
