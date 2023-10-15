@@ -3,18 +3,21 @@
         "id": 1,
         "title": "Fibonacci Series",
         "description": "Generate a Fibonacci series with n terms.",
-        "code_link": "https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/"
+        "code_link": "https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/",
+        "tags": ["recursion", "iterable"]
     },
     {
         "id": 2,
         "title": "Factorial Calculation",
         "description": "Calculate the factorial of a given number.",
-        "code_link": "https://www.javatpoint.com/factorial-program-in-c"
+        "code_link": "https://www.javatpoint.com/factorial-program-in-c",
+        "tags": ["iterable"]
     },
     {
         "id": 3,
         "title": "Prime Numbers",
         "description": "Find prime numbers up to a given limit.",
-        "code_link": "https://www.javatpoint.com/prime-number-program-in-java"
+        "code_link": "https://www.javatpoint.com/prime-number-program-in-java",
+        "tags": ["iterable"]
     }
 ]
