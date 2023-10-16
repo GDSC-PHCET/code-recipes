@@ -19,8 +19,8 @@ function displayTags(tags) {
     htmlTags += `<span class="tag" onClick="searchTag()">${tag}</span>`
   }
   return `<div>${htmlTags}</div>`
-
 }
+
 // Function to display card 
 function displayCard({title, description, code_link, tags}) {
   return `
@@ -34,6 +34,7 @@ function displayCard({title, description, code_link, tags}) {
   </div>
 `
 }
+
 // Function to fetch recipes from the JSON file
 function fetchRecipes() {
     fetch("recipes.json")

@@ -17,6 +17,7 @@
     margin-right: 5px;
 }
 
+/* Style for tags */
 .tag {
   cursor: pointer;
   display: inline-block;

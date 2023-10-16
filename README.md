@@ -6,7 +6,8 @@ This repo is made for Non-Coders, but Coders can also contribute to make this re
 
 Welcome to the Coding Recipe Book project, made for GDSC x Hacktoberfest 2023. This project is a simple web application that allows you to discover and explore coding recipes for various programming tasks.
 
-You can add your own recipes by modifying recipes.json file.
+We would like you to contribute in our project by adding your own recipes by modifying 
+recipes.json file.
 
 <h2 align=center> Features ✨ </h2>
 
@@ -30,15 +31,17 @@ Contributing to open-source projects is a great way to learn and give back to th
 2. **Clone the Repository:** Open your terminal and run the following command to clone the repository to your local machine. Replace `<your-username>` with your GitHub username.
 
 ```bash
-https://github.com/GDSC-PHCET/code-recipes.git 
+https://github.com/<your-username>/code-recipes.git 
 ```
 
-3. **Create a New Branch:** In your terminal, create a new branch for your changes.
+3. **Create a New Branch:** In your terminal, create a new branch for your changes. 
 
 ```bash
 cd code-recipes
-git checkout -b newbranch
+git checkout -b branchname
 ```
+Here "branchname" is the name of your branch in your device, the branchname is preferred to be related to the issue you are solving.  
+
 4. **Make Changes:** Make the necessary changes or contributions to the project.
 
 5. **Check Status:** To check the status of your changes, use the appropriate command for your version control system.
