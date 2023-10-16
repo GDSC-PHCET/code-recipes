@@ -34,13 +34,13 @@ Contributing to open-source projects is a great way to learn and give back to th
 https://github.com/your-username/code-recipes.git 
 ```
 
-3. **Create a New Branch:** In your terminal, create a new branch for your changes. 
+3. **Create a New Branch:** In your terminal, create a new branch for your changes. Here "branchname" is the name of your branch in your local machine, the branchname is preferred to be related to the issue you are solving.  
 
 ```bash
 cd code-recipes
 git checkout -b branchname
 ```
-  Here "branchname" is the name of your branch in your local machine, the branchname is preferred to be related to the issue you are solving.  
+   
 
 4. **Make Changes:** Make the necessary changes or contributions to the project.
 
