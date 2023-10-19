@@ -2,16 +2,21 @@
 <html>
     <head>
         <title>Coding Recipe Book</title>
+        <!-- Link to Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Link to our custom CSS file -->
         <link rel="stylesheet" href="style.css">
+        <!-- Link to Font Awesome for icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>  
 <body>
     <header class="bg-dark text-white text-center p-3">
         <h1>Coding Recipe Book</h1>
         <div class="input-group mb-3">
+            <!-- Search input field -->
             <input type="text" class="form-control" id="search-input" placeholder="Search recipes...">
             <div class="input-group-append">
+                <!-- Search button -->
                 <button class="btn btn-primary" type="button">Search</button>
             </div>
         </div>
@@ -19,20 +24,23 @@
 
     <div class="container my-4">
         <div class="row" id="recipe-list">
-            <!-- Display existing recipes here -->
+            <!-- Display existing recipes here (this is a placeholder for dynamically generated content) -->
         </div>
     </div>
     
     <footer class="footer bg-dark text-white text-center p-3">
         <p>Made for GDSC x Hacktoberfest 2023</p>
         <a href="https://github.com/GDSC-PHCET/code-recipes" target="_blank" class="text-white">
+            <!-- GitHub link with a Font Awesome GitHub icon -->
             <i class="fab fa-github"></i>
         </a>
     </footer>
 
+    <!-- JavaScript libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Our custom JavaScript file for additional functionality -->
     <script src="script.js"></script>
 </body>
 </html>

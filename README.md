@@ -6,7 +6,8 @@ This repo is made for Non-Coders, but Coders can also contribute to make this re
 
 Welcome to the Coding Recipe Book project, made for GDSC x Hacktoberfest 2023. This project is a simple web application that allows you to discover and explore coding recipes for various programming tasks.
 
-You can add your own recipes by modifying recipes.json file.
+We would like you to contribute in our project by adding your own recipes by modifying 
+recipes.json file.
 
 <h2 align=center> Features ✨ </h2>
 
@@ -27,18 +28,20 @@ Contributing to open-source projects is a great way to learn and give back to th
 
 1. **Fork the Repository:** Click the "Fork" button at the top right corner of this repository's page. This will create a copy of the project in your GitHub account.
 
-2. **Clone the Repository:** Open your terminal and run the following command to clone the repository to your local machine. Replace `<your-username>` with your GitHub username.
+2. **Clone the Repository:** Open your terminal and run the following command to clone the repository to your local machine. Replace `your-username` with your GitHub username.
 
 ```bash
-https://github.com/GDSC-PHCET/code-recipes.git 
+https://github.com/your-username/code-recipes.git 
 ```
 
-3. **Create a New Branch:** In your terminal, create a new branch for your changes.
+3. **Create a New Branch:** In your terminal, create a new branch for your changes. Here "branchname" is the name of your branch in your local machine, the branchname is preferred to be related to the issue you are solving.  
 
 ```bash
 cd code-recipes
-git checkout -b newbranch
+git checkout -b branchname
 ```
+   
+
 4. **Make Changes:** Make the necessary changes or contributions to the project.
 
 5. **Check Status:** To check the status of your changes, use the appropriate command for your version control system.
@@ -59,7 +62,7 @@ git commit -m "Commit message"
 ```
 8. **Push Changes:** Push your changes to your forked repository on GitHub.
 ```bash
-git push origin newbranch
+git push origin branchname
 ```
 9. **Create a Pull Request:** Go to your forked repository on GitHub and create a new pull request. Choose the appropriate branches and describe your changes.
 
