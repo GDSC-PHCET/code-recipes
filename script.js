@@ -9,7 +9,7 @@ window.onload = function () {
     searchInput.addEventListener("input", searchRecipes);
 
     // Add event listeners to form submit button
-    document.getElementById("recipe-form").addEventListener("submit", submitRecipe);
+    // document.getElementById("recipe-form").addEventListener("submit", submitRecipe);
 };
 
 // Function to get display tags
@@ -24,7 +24,7 @@ function displayTags(tags) {
 // Function to display card 
 function displayCard({title, description, code_link, tags}) {
   return `
-  <div class="card">
+  <div class="card justify-content-center custom-card">
       <div class="card-body">
           <h5 class="card-title">${title}</h5>
           <p class="card-text">${description}</p>
@@ -45,14 +45,13 @@ function fetchRecipes() {
         });
 }
 
-// Function to display recipes
 function displayRecipes() {
     const recipeList = document.getElementById("recipe-list");
     recipeList.innerHTML = "";
 
     recipes.forEach(recipe => {
         const card = document.createElement("div");
-        card.className = "col-md-4 mb-4";
+        card.className = "col-lg-4 col-md-6 col-sm-12 mb-4"; // Adjust column size based on screen width
         card.innerHTML = displayCard(recipe);
         recipeList.appendChild(card);
     });
